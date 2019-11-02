@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* _______________________________________________________________________________________________________
+  utility classes
+  ________________________________________________________________________________________________________________ */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-primary {
+  color: rgba(193, 97, 241, 0.733);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+.green {
+  border: 1px solid green;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.s-heading {
+  font-size: 3.2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: block;
+  color: #fff;
+  background: rgba(193, 97, 241, 0.733);
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: rgba(193, 97, 241, 0.377);
+  cursor: pointer;
+}
+
+.btn-dark {
+  display: block;
+  color: #fff;
+  background: #333;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: rgba(20, 7, 7, 0.829);
+  cursor: pointer;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  /* background-color: rgba(193, 97, 241, 0.733); */
+  background-color: #696969;
+  color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted #444;
+}
+
+/* _______________________________________________________________________________________________________
+  navbar
+  ________________________________________________________________________________________________________________ */
+
+#navbar {
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  position: sticky;
+  padding: 1rem;
+  /* overflow: hidden; */
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;  
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: .6rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background-color: rgba(193, 97, 241, 0.733);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: rgba(193, 97, 241, 0.733);
+  border-radius: 5px;
+}
+
+/*_________________________________________________________________________________________________________________________
+   showcase 
+________________________________________________________________________________________________________________ */
+
+#showcase {
+  background: #333 url('../Images/showcase.jpg')no-repeat center center/cover;
+  height: 100vh;
+  /* position: relative; */
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+/*_________________________________________________________________________________________________________________________
+   what 
+________________________________________________________________________________________________________________ */
+
+#what {
+  text-align: left;
+  color: #333;
+}
+
+#what .items {
+  padding: 1rem;
+}
+
+#what .items .item {
+  padding: 1rem;
+  display: flex;
+}
+
+#what .items .item i {
+  align-content: center;
+  background-color: rgba(193, 97, 241, 0.733);
+  border-radius: 50%;
+  align-self: center;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+/*_________________________________________________________________________________________________________________________
+   who
+________________________________________________________________________________________________________________ */
+
+/*_________________________________________________________________________________________________________________________
+   clients 
+________________________________________________________________________________________________________________ */
+
+#clients .items {
+  display: flex;
+}
+
+#clients .items div img {
+  width: 55%;
+  margin: auto;
+  display: block;
+}
+
+#clients .items div img {
+  width: 55%;
+  display: block;
+  margin: auto;
+}
+
+/* _______________________________________________________________________________________________________
+  Contact Section
+  ________________________________________________________________________________________________________________ */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .map, #contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form .form-group label {
+  display: block;
+}
+
+#contact .contact-form .form-group input, #contact .contact-form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#contact .contact-form .form-group .btn-dark {
+  margin-top: 1rem;
+}
+
+.contact-form .m-heading, .contact-form p {
+  text-align: center;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  max-height: 100px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100px;
+}
+
+#contact div.contact-form {
+  padding-bottom: 0;
+}
+
+#contact .contact-form form label {
+  display: none!important;
+}
+
+/* _______________________________________________________________________________________________________
+  footer
+  ________________________________________________________________________________________________________________ */
+
+footer {
+  font-size: .8rem;
+}
+
+/* _______________________________________________________________________________________________________
+  Responsiveness
+  ________________________________________________________________________________________________________________ */
+
+@media(min-width:501px) {
+  /* _______________________________________________________________________________________________________
+  Who We Are Section
+  ________________________________________________________________________________________________________________ */
+  #who {
+    display: flex;
+  }
+  #who div {
+    flex: 1;
+  }
+  #who .who-img {
+    background: url("../Images/people.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  #navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar ul {
+    margin-top: 0;
+  }
+
+  
+  #navbar ul li{       
+   align-items: center;   
+  }
+
+  #navbar ul li a {        
+    align-items: center;
+  }
+}
+
+@media(min-width:769px) {
+  #what .items {
+    display: flex;
+    text-align: center;
+  }
+  #what .items .item {
+    display: flex;
+    flex-direction: column;
+  }
+  #what .items .item i {
+    margin-bottom: 1rem;
+  }
+  #contact {
+    flex-direction: row;
+  }
+  .map {
+    max-height: 414px;
+  }
+  .map iframe {
+    height: 414px;
+  }
+}
+
+@media(min-width:1100px) {
+  #what .items .item {
+    flex-direction: row;
+  }
+}
